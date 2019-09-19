@@ -1,0 +1,356 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="small_business_45/theme1/stylesheets/flexslider.css" media="all" rel="stylesheet" type="text/css">
+  <link href="what.css" media="all" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>    
+ </head>
+<body>
+	<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("main").style.marginRight = "";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+}
+function openNavv() {
+  document.getElementById("mySidebarr").style.width = "300px";
+  document.getElementById("mainn").style.marginLeft = "";
+}
+
+function closeNavv() {
+  document.getElementById("mySidebarr").style.width = "0";
+  document.getElementById("mainn").style.marginLeft= "0";
+}
+
+
+$(window).on("load", function(){
+    var windowWidth = $(window).width();
+
+    $(".nav-tabs li").on("click", function(){
+      if(windowWidth < 768)
+      {
+
+        $("#main").addClass("from-right");
+      }
+    })
+
+    $(".back-button").on("click", function(){
+      if(windowWidth < 768)
+      {
+
+        $("#main").removeClass("from-right");
+      }
+    })
+});
+</script>
+    <div class="main-body col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+        <div class="flex-main container no-pad">
+            
+              <div id="mainn" class="col-md-4 col-lg-4 col-xs-12 col-sm-6 no-pad">
+                  <div class="profile col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                      <!-- <input type="text">   -->
+                      <div class=" col-md-5 col-lg-5 col-xs-5 col-sm-5 no-pad">
+                        <div class="badgee"><img  onclick="openNavv()" src="j.jpeg"></div></div>
+                        <div id="mySidebarr" class="sidebarr">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavv()"> <h1><i class="fa fa-arrow-left" aria-hidden="true"></i>Profile</h1></a>
+<div style="    text-align: center;" class="side-profile">
+	<img src="av1.jpg">
+
+</div>
+<div class="pro-info">
+	<p>Your name</p>
+	<div>
+<input type="text" name=""></div>
+</div>
+<div class="pro-media">
+<p>About</p>
+<div>
+<input type="text" name=""></div>
+</div>
+
+
+</div>
+                            <!-- <div class="col-md-8 col-lg-8 no-pad"></div> -->
+                            <div class="msg col-md-6 col-lg-6 col-xs-6 col-sm-6 no-pad"> 
+                              <ul class="list-inline">
+                                  <li><a href="subscribe.html" class="subsc">Subscribe</a></li>
+                                <li><i class="fa fa-circle-o-notch" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-comment" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li>
+                              </ul>
+                            </div>
+                     </div>
+                <div class="search col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                 <input type="text" placeholder="search">  
+                </div>
+                <ul class="nav nav-tabs col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                  <li class="active">
+                    <a data-toggle="tab" href="#home"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                        <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av1.jpg"></div>
+                        <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                          <p>natasha</p>
+                          <p>123456789: hi</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"> 
+                            <p>yesterday</p>  
+                            <span class="count-badge">1</span>
+                        </div>
+
+                </div></a>
+                  </li>
+                  <li>
+                      <a data-toggle="tab" href="#menu1"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                            <div class="badgee col-md-1 col-xs-1 col-sm-1 col-lg-1 no-pad"><img src="av2.png"></div>
+                            <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                              <p>raj</p>
+                              <p>123456789: hi</p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"> 
+                                <p>yesterday</p>  
+                                <span class="count-badge">12</span>
+                            </div>
+
+                    </div></a>
+                    
+                    </li>
+
+                  <li><a data-toggle="tab" href="#menu2">
+                      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                          <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av4.png"></div>
+                          <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                            <p>debbie</p>
+                            <p>123456789: hi</p>
+                          </div>
+                          <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"> 
+                          <p>yesterday</p>  
+                          <span class="count-badge">1</span>
+                          </div>
+
+                  </div>
+                  </a></li>
+                  <li><a data-toggle="tab" href="#menu3">
+                      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                          <div class="badgee col-md-1 col-xs-1 col-sm-1 col-lg-1 no-pad"><img src="av5.jpg"></div>
+                          <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                            <p>roy</p>
+                            <p>123456789: hi</p>
+                          </div>
+                          <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad">
+                              <p>yesterday</p>  
+                              <span class="count-badge">1</span>
+                          </div>
+
+                  </div>
+                  </a></li>
+                  <li><a data-toggle="tab" href="#menu4"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av2.png"></div>
+                      <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                        <p>rachel</p>
+                        <p>123456789: hi</p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad">
+                          <p>monday</p>   </div>
+
+              </div></a></li>
+                  <li><a data-toggle="tab" href="#menu5"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av3.jpeg"></div>
+                      <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                        <p>qwen</p>
+                        <p>123456789: hi</p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad">  <p>monday</p></div>
+
+              </div></a></li>
+                  <li><a data-toggle="tab" href="#menu6"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av1.jpg"></div>
+                      <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                        <p>ben</p>
+                        <p>123456789: hi</p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"> 
+                          <p>monday</p>
+                          <span class="count-badge">1</span>
+                      </div>
+
+              </div></a></li>
+                  <li><a data-toggle="tab" href="#menu7"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av3.jpeg"></div>
+                      <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                        <p>peter</p>
+                        <p>123456789: hi</p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"> 
+                          <p>tuesday</p><span class="count-badge">1</span></div>
+
+              </div></a></li>
+                  <li><a data-toggle="tab" href="#menu8"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av4.png"></div>
+                      <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                        <p>dev</p>
+                        <p>123456789: hi</p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"> <p>tuesday</p></div>
+
+              </div></a></li>
+                  <li><a data-toggle="tab" href="#menu9"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av3.jpeg"></div>
+                      <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                        <p>ray</p>
+                        <p>123456789: hi</p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"><p>tuesday</p></div>
+
+              </div></a></li>
+                  <li><a data-toggle="tab" href="#menu10"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av4.png"></div>
+                      <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                        <p>fous</p>
+                        <p>123456789: hi</p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"><p>tuesday</p></div>
+
+              </div></a></li>
+                  <li><a data-toggle="tab" href="#menu11"><div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="badgee col-md-1 col-lg-1 col-xs-1 col-sm-1 no-pad"><img src="av2.png"></div>
+                      <div class="contact-msg col-md-8 col-lg-8 col-xs-8 col-sm-8 no-pad">
+                        <p>angel</p>
+                        <p>123456789: hi</p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 no-pad"><p>tuesday</p> </div>
+
+              </div></a></li>
+                </ul>
+              </div>
+
+
+                <div id="main" class="right-side tab-content col-md-8 col-lg-8 col-xs-12 col-sm-6 no-pad">
+                  <div id="home" class="tab-pane in active">
+                    <div class="header col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="pro-img col-md-1 col-lg-1 col-xs-2 col-sm-2 no-pad">
+                        <span class="back-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                        <span class="badgee">
+<img src="av1.jpg"></span></div>
+                        <div class="pro-content col-md-11 col-lg-11 col-xs-6 col-sm-11 no-pad">
+                    <h3> natasha</h3>
+                  <span>online</span></div>
+                  <div class="pro-social col-md-11 col-lg-11 col-xs-4 col-sm-11 no-pad">
+                    <ul class="list-inline">
+                        
+                        <li><i class="fa fa-video-camera" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-paperclip" aria-hidden="true"></i></li>
+                        <!-- <li onclick="myFunction()"><i  class="fa/ fa-ellipsis-v" aria-hidden="true"></i></li> -->
+                        <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i  class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a onclick="openNav()" href="#home">user profile</a>
+    <a href="forum.html">forum</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <h1>Contact Info</h1>
+<div style="    text-align: center;" class="side-profile">
+	<img src="av1.jpg">
+
+</div>
+<div class="side-info">
+	<p>Natasha</p>
+
+</div>
+<div class="side-media">
+	<p>Media,link,docs</p>
+	<ul class="a list-inline">
+	<li><img class="img-responsive" src="av1.jpg"></li>
+	<!-- <li><img src="av1.jpg"></li> -->
+	<!-- <li><img src="a/v1.jpg"></li> -->
+</ul>
+</div>
+<div class="side-contact">
+	<p>About & phone number</p>
+	<a>87945232</a>
+	<a><i class="fa fa-ban" aria-hidden="true"></i>block</a>
+	<a style="color: red;"><i class="fa fa-thumbs-down" aria-hidden="true"></i>Report contact</a>
+	<a style="color: red;"><i class="fa fa-trash" aria-hidden="true"></i>delete chat</a>
+
+</div>
+
+</ul>	                  
+</div>
+                  </div>
+                    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                     
+                      <div class="right-msg col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                          <span>hi</span>
+                        </div>
+                        <div class="left-msg col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                            <span>hi</span>
+                          </div>
+                  </div>
+                  </div>
+                  <div id="menu1" class="tab-pane fade">
+                     <div class="header col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                      <div class="pro-img col-md-1 col-lg-1 col-xs-2 col-sm-2 no-pad">
+                        <span class="badgee"><img src="av1.jpg"></span></div>
+                        <div class="pro-content col-md-11 col-lg-11 col-xs-11 col-sm-11 no-pad">
+                    <h3> raj</h3>
+                  <span>online</span></div>
+                  <div class="pro-social col-md-11 col-lg-11 col-xs-11 col-sm-11 no-pad">
+                    <ul class="list-inline">
+                        
+                        <li><i class="fa fa-video-camera" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-paperclip" aria-hidden="true"></i></li>
+                    </ul>
+</div>
+                  </div>
+
+                    <!-- <h3>raj</h3> -->
+                    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 no-pad">
+                     
+                        <div class="right-msg col-md-12 col-xs-12 col-sm-12 col-lg-12 no-pad">
+                            <span>hi</span>
+                          </div>
+                          <div class="left-msg col-md-12 col-xs-12 col-sm-12 col-lg-12 no-pad">
+                              <span>hi</span>
+                            </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+</body>
+</html>
